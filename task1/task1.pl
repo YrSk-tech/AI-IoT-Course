@@ -1,3 +1,4 @@
+
 student(petro).
 student(homa).
 student(tamara).
@@ -32,11 +33,24 @@ chummery_num(taras, 3).
 chummery_num(lesya, 5).
 chummery_num(victor, 3).
 
+studies(Student, Institute, Course) :-
+    student(Student),
+    institute(Student, Institute),
+    course(Student, Course).
+knows(Student1, Student2) :-
+    (
+    course(Student1, Course),
+    course(Student2, Course),
+    Student1 \= Student2
 
-knows(X, Y) :-
-    (   course(X, Course), course(Y, Course));
-    (   institute(X, Institute), institute(Y, Institute));
-    (   chummery_num(X, ChummeryNum), chummery_num(Y, ChummeryNum)),
-    X \= Y.
-
-
+    );
+    (
+    institute(Student1, Institute),
+    institute(Student2, Institute),
+    Student1 \= Student2
+    );
+    (
+    chummery_num(Student1, Chummery_num),
+    chummery_num(Student2, Chummery_num),
+    Student1 \= Student2
+    ).
