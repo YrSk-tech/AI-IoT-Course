@@ -1,0 +1,31 @@
+Task 1
+Using frames as a method of knowledge representation to describe the following situations:
+
+It is known that students, as a group of individuals, are going on a tourist trip. Information about the students is provided in the form of a table (Table 1):
+Table 1.
+Information about students
+Name Institute Course Dormitory No.
+Petro ICTA IV 3
+Homa ICNI III 4
+Tamara ICNI II 4
+Olha ICTA IV 5
+Taras IESK I 3
+Lesia ITRE II 5
+Write a program that contains facts "studies/3" and "resides/2" based on the provided data. Supplement the program with the "knows/2" procedure, under which a certain student knows another if they are studying in the same course and at the same faculty or residing in the same dormitory. Take into account that a person cannot know themselves.
+Organize queries to the created set of program phrases:
+Does a specific person study at a specific institute and course?
+Who studies at a specific institute and course?
+Does a specific person reside in a specific dormitory?
+Which students of which institutes reside in a specific dormitory?
+Does one specific person know another specific person?
+Which individuals know each other?
+Can it be said that a specific person is known by someone?
+Which individuals know each other and study at different institutes?
+Which individuals study at ICTA or reside in Dormitory No. 3?
+Task 2
+Supplement the program's database with the fact that the tourist group includes a teacher, Viktor, who conducts classes in the IESK first year course and resides in Dormitory No. 3. Modify the database to be able to answer the question about whether a person is a student or a teacher. Modify the "knows/2" rule so that it considers that a student and a teacher know each other if the teacher conducts classes on the same course as the student or they reside in the same dormitory. Execute queries to the modified program:
+
+Is a specific person a teacher or a student?
+Whom does a specific person know?
+Who resides in a specific dormitory?
+Whom among those who are on the IV course does Viktor know?
